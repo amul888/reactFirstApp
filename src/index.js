@@ -1,5 +1,14 @@
 import React,{ Component } from 'react';
 import ReactDom from 'react-dom';
-import Routes from '../routes';
+import Routes from './routes';
 
-ReactDom.render(<Routes/>,document.getElementById('root'));
+class App extends Component{
+  render(){
+    return(
+      <div>
+        {Routes}
+      </div>
+    )
+  }
+}
+ReactDom.render(<App/>,document.getElementById('root'));
